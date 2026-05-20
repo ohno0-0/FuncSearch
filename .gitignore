@@ -1,0 +1,108 @@
+# ==========================================
+# 1. CMake 生成文件与缓存
+# ==========================================
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeScripts/
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+
+# ==========================================
+# 2. Qt 特有文件
+# ==========================================
+# Qt Creator 个人配置文件（包含本地路径，绝对不能提交）
+CMakeLists.txt.user
+*.pro.user
+*.pro.user.*
+# Qt 自动生成的 UI 头文件
+ui_*.h
+# Qt 自动生成的资源文件
+qrc_*.cpp
+# Qt 自动生成的 moc 文件
+moc_*.cpp
+moc_*.h
+# Qt 翻译二进制文件（通常只提交 .ts 源文件）
+*.qm
+# Qt QML 缓存文件
+*.qmlc
+*.jsc
+
+# ==========================================
+# 3. 编译输出与构建目录
+# ==========================================
+# 常见的构建目录命名习惯
+build/
+build-*/
+out/
+cmake-build-*/
+
+# 编译产生的二进制文件、动态/静态库
+*.o
+*.obj
+*.exe
+*.out
+*.app
+*.so
+*.so.*
+*.dylib
+*.dll
+*.a
+*.lib
+
+# ==========================================
+# 4. 系统与 IDE 残留文件 (兼顾 WSL/Linux 和 Windows)
+# ==========================================
+# Linux/macOS 系统文件
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows 系统文件（如果在 /mnt/c 下共享开发极易产生）
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ==========================================
+# 5. 编辑器与 IDE 配置
+# ==========================================
+# VS Code (在 WSL 下开发极常用)
+.vscode/*
+# 保留 VS Code 的推荐扩展列表（按需取消注释下面两行）
+# !.vscode/settings.json
+# !.vscode/extensions.json
+
+# CLion / IntelliJ
+.idea/
+*.iml
+
+# Vim / Emacs 等 Linux 常用编辑器
+*.swp
+*.swo
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+
+# ==========================================
+# 6. 其他无需版本控制的文件
+# ==========================================
+# 日志文件
+*.log
+
+# 打包文件
+*.tar
+*.tar.gz
+*.zip
+*.7z
+
+# 依赖目录（如果你使用 vcpkg 或 conan 作为子模块/子目录）
+vcpkg_installed/
+
