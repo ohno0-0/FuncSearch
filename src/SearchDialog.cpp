@@ -16,7 +16,7 @@ SearchDialog::SearchDialog(QWidget *parent) : QDialog(parent) {
 
     // 上下分割器：上面是列表，下面是描述
     QSplitter* splitter = new QSplitter(Qt::Vertical, this);
-    m_listWidget = new QListWidget(this);
+    m_listWidget = new (this);
     m_descEdit = new QTextEdit(this);
     m_descEdit->setReadOnly(true);
     splitter->addWidget(m_listWidget);
